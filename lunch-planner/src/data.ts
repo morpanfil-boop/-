@@ -1,0 +1,125 @@
+import type { FamilyMember, Recipe } from './types';
+
+export const FAMILY_MEMBERS: FamilyMember[] = [
+  { id: 'omri', name: 'עמרי', isGlutenFree: false, emoji: '👦' },
+  { id: 'ella', name: 'אלה', isGlutenFree: false, emoji: '👧' },
+  { id: 'nitai', name: 'ניתאי', isGlutenFree: false, emoji: '🧒' },
+  { id: 'tuvia', name: 'טוביה', isGlutenFree: true, emoji: '👨' },
+  { id: 'mor', name: 'מור', isGlutenFree: false, emoji: '👩' },
+];
+
+export const INITIAL_RECIPES: Recipe[] = [
+  // General / everyone
+  {
+    id: '1',
+    name: 'שניצל',
+    likedBy: ['omri', 'mor'],
+    isGlutenFree: false,
+    category: 'עוף',
+  },
+  {
+    id: '2',
+    name: 'סלמון',
+    likedBy: ['omri', 'ella'],
+    isGlutenFree: true,
+    category: 'דגים',
+  },
+  {
+    id: '3',
+    name: 'פסטה עם ירקות מוקפצים',
+    likedBy: ['omri', 'mor'],
+    isGlutenFree: false,
+    category: 'פסטה',
+  },
+  {
+    id: '4',
+    name: 'פירה',
+    likedBy: ['omri'],
+    isGlutenFree: true,
+    category: 'ירקות',
+  },
+  {
+    id: '5',
+    name: 'עראיס',
+    likedBy: ['omri'],
+    isGlutenFree: false,
+    category: 'בשר',
+  },
+  {
+    id: '6',
+    name: 'קציצות ברוטב',
+    likedBy: ['omri', 'ella'],
+    isGlutenFree: false,
+    category: 'בשר',
+  },
+  {
+    id: '7',
+    name: 'אורז לבן',
+    likedBy: ['omri', 'ella'],
+    isGlutenFree: true,
+    category: 'אורז/דגנים',
+  },
+  {
+    id: '8',
+    name: 'פסטה ברוטב אדום',
+    likedBy: ['omri'],
+    isGlutenFree: false,
+    category: 'פסטה',
+  },
+  {
+    id: '9',
+    name: 'אורז/פסטה מוקפץ',
+    likedBy: ['ella'],
+    isGlutenFree: false,
+    category: 'אורז/דגנים',
+  },
+  {
+    id: '10',
+    name: 'בורגול',
+    likedBy: ['ella'],
+    isGlutenFree: false,
+    category: 'אורז/דגנים',
+  },
+  {
+    id: '11',
+    name: 'פסטה ברוטב שמנת',
+    likedBy: ['ella', 'nitai'],
+    isGlutenFree: false,
+    category: 'פסטה',
+  },
+  {
+    id: '12',
+    name: 'פתיתים',
+    likedBy: ['nitai'],
+    isGlutenFree: false,
+    category: 'פסטה',
+  },
+  {
+    id: '13',
+    name: 'חזה עוף ברוטב צ\'ילי',
+    likedBy: ['nitai'],
+    isGlutenFree: true,
+    category: 'עוף',
+  },
+  {
+    id: '14',
+    name: 'קוסקוס',
+    likedBy: ['nitai'],
+    isGlutenFree: false,
+    category: 'אורז/דגנים',
+  },
+  {
+    id: '15',
+    name: 'עוף',
+    likedBy: ['mor'],
+    isGlutenFree: true,
+    category: 'עוף',
+  },
+  {
+    id: '16',
+    name: 'ירקות מוקפצים',
+    likedBy: ['mor'],
+    isGlutenFree: true,
+    category: 'ירקות',
+  },
+];
